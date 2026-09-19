@@ -1,4 +1,4 @@
-import { usememo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useProducts } from "../context/ProductsContext";
 import Filter from "../components/menu/Filter";
 import MenuCard from "../components/menu/MenuCard";
