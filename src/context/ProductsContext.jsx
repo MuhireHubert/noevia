@@ -11,7 +11,7 @@ import {
     orderBy,
 } from "firebase/firestore";
 import { db } from "../firebase";
-import seedMenuData from "../../data/menuData";
+import seedMenuData from "../data/menuData";
 
 const ProductsContext = createContext(null);
 
@@ -22,7 +22,7 @@ export function ProductsProvider({ children }) {
     const hasSeeded = useRef(false);
 
     useEffect(() => {
-        const q = query(collection(db, "producs"), orderBy("name"));
+        const q = query(collection(db, "products"), orderBy("name"));
         const unsubscribe = onSnapshot(
             q,
             async (snapshot) => {
