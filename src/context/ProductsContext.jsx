@@ -11,7 +11,7 @@ import {
     orderBy,
 } from "firebase/firestore";
 import { db } from "../firebase";
-import seedMenuData from "../data/menudata";
+import seedMenuData from "../../data/menuData";
 
 const ProductsContext = createContext(null);
 
